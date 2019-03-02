@@ -1,8 +1,9 @@
  <?php
 
-$router->get('', 'PagesController@home');
-$router->get('about', 'PagesController@about');
-$router->get('contact', 'PagesController@contact');
+$router->get('', 'TaskController@index');
+$router->get('task/create', 'TaskController@create');
+$router->post('task/store', 'TaskController@store');
 
-$router->get('users', 'UsersController@index');
-$router->post('users', 'UsersController@store');
+$router->get('autorization', 'LoginController@index');
+$router->post('login', 'LoginController@login');
+$router->get('logout', 'LoginController@logout');

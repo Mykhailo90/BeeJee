@@ -1,3 +1,29 @@
 body {
     background: #999;
 }
+#brand {
+    color: white;
+}
+#author {
+    text-align: center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    color: white;
+}
+#author a {
+    color: white;
+}
+.registr-form {
+    margin-top: 30px;
+}
+#error {
+    margin-top: 30px;
+}
+h1{
+    text-align: center;
+}
+#addTask {
+    margin-top: 20px;
+}
