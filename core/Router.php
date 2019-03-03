@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use Exception;
+
 class Router
 {
     /**
@@ -18,6 +20,7 @@ class Router
      * Load a user's routes file.
      *
      * @param string $file
+     * @return router
      */
     public static function load($file)
     {
@@ -55,6 +58,9 @@ class Router
      *
      * @param string $uri
      * @param string $requestType
+     * @throws 404
+     *
+     * @return string
      */
     public function direct($uri, $requestType)
     {
@@ -64,7 +70,7 @@ class Router
             );
         }
 
-        throw new Exception('No route defined for this URI.');
+        redirect('page-not-found');
     }
 
     /**
@@ -72,6 +78,9 @@ class Router
      *
      * @param string $controller
      * @param string $action
+     * @throws \Exception
+     *
+     * @return string
      */
     protected function callAction($controller, $action)
     {

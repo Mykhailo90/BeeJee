@@ -23,7 +23,8 @@ class LoginController
             return redirect('');
         }
         $_SESSION['error'] = 'error credentials';
-        redirect('autorization');
+
+        return redirect('autorization');
     }
 
     /**
@@ -33,6 +34,7 @@ class LoginController
     {
         unset($_SESSION['login']);
         unset($_SESSION['error']);
-        redirect('');
+
+        return redirect('');
     }
 }

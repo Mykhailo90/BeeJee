@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use Exception;
+
 class App
 {
     /**
@@ -26,6 +28,8 @@ class App
      * Retrieve a value from the registry.
      *
      * @param  string $key
+     * @throws \Exception
+     * @return string $value
      */
     public static function get($key)
     {

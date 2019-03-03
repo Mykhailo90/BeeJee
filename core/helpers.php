@@ -5,6 +5,8 @@
  *
  * @param  string $name
  * @param  array  $data
+ *
+ * @return views
  */
 function view($name, $data = [])
 {

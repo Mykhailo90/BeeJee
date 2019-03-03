@@ -13,6 +13,7 @@ return array(
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
+    'App\\Models\\Task' => $baseDir . '/app/models/Task.php',
     'ComposerAutoloaderInita91edb2983d61d85c8275d27f786119d' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInita91edb2983d61d85c8275d27f786119d' => $vendorDir . '/composer/autoload_static.php',

@@ -11,6 +11,8 @@ class Connection
      * Create a new PDO connection.
      *
      * @param array $config
+     * @throws PDOException
+     * @return PDO
      */
     public static function make($config)
     {
